@@ -1,0 +1,35 @@
+#ss-navbar {
+  background-color: #111c1e; 
+  background-image: url(../img/metalbg.png);
+}
+  #ss-navbar .social_midias_logo {
+    padding: 2rem; }
+  #ss-navbar .social_midias_bar {
+    text-align: center;
+    position: relative;
+    margin: 0 auto; }
+  #ss-navbar .social_midias_buttons {
+    font-family: "ElegantIcons";
+    display: inline-block;
+    float: left;
+    color: #F9F9F9;
+    border: 1px solid #606060;
+    margin: 0 auto;
+    padding: 0.5rem 0.8rem;
+    margin-right: 1rem;
+    -webkit-border-radius: 0.5rem;
+    -moz-border-radius: 0.5rem;
+    -ms-border-radius: 0.5rem;
+    border-radius: 0.5rem; }
+    #ss-navbar .social_midias_buttons:hover {
+      color: #F9F9F9;
+      background-color: #ff9933;
+      cursor: pointer; }
+
+  #ss-navbar .copyright p{
+    font-family: 'Raleway Medium', sans-serif;
+    color: #F9F9F9;
+    font-size: 0.8rem;
+    text-align: center;
+    padding-top: 1.5rem;
+  }

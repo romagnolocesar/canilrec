@@ -1,0 +1,46 @@
+#ss-formcontato{
+  background-color: #111c1e;
+  /*background-image: url("../img/darkdoor.jpg") ;
+    background-position: center center;*/
+}
+
+#ss-formcontato #subLayerForm{
+  display: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #111c1e;
+  opacity: 0.8
+}
+
+
+#ss-formcontato #card-contato{
+  margin: 0;
+}
+
+#ss-formcontato .card{
+  font-family: "Raleway Medium";
+}
+
+#ss-formcontato .card-icon{
+  font-size: 1rem;
+    font-family: "ElegantIcons";
+    color: #384447;
+}
+
+#ss-formcontato .card-header{
+    font-family: "Raleway ExtraBold";
+    font-size: 1rem;
+    color: #384447;
+    text-transform: uppercase;
+}
+
+
+
+
+@media (max-width: 768px){
+  #ss-formcontato .session_title .text {
+      margin: 0 1rem;
+      font-size: 1.3rem;
+  }
+}

@@ -1,0 +1,8 @@
+<IfModule mod_rewrite.c>
+	Options +FollowSymLinks
+	RewriteEngine On
+	RewriteBase /canil/api/
+	RewriteRule ^(.*)/([0-9]+)\/?$ $1?id=$2 [NC] 
+	RewriteRule ^(.*)/([0-9]+)/([a-z0-9-]+)\/?$ $1?id=$2&route=$3 [NC] 
+	RewriteRule ^tracksService/limit/([0-9]+)/?$ trackService.php?limit=$1 [NC] 
+</IfModule>

@@ -1,0 +1,41 @@
+/* OUR PRODUCTS */
+#ss-criatproccess{
+  margin-bottom: 3rem; 
+}
+
+
+#ss-criatproccess #advantages .advantages_itens {
+  margin-bottom: 2rem; 
+}
+#ss-criatproccess #advantages .advantages_icon {
+  font-family: "ElegantIcons";
+  color: #ff9933;
+  font-size: 3rem; 
+}
+#ss-criatproccess #advantages .advantages_title {
+  font-family: 'Raleway Medium', sans-serif;
+  color: #e4e4e4;
+  font-size: 1rem;
+  text-transform: uppercase;
+  text-align: left; 
+}
+#ss-criatproccess #advantages .advantages_description {
+  font-family: 'Raleway Medium', sans-serif;
+  color: #7a7a7a;
+  font-size: 1rem;
+  text-align: left; 
+}
+#ss-criatproccess #advantages .device-img {
+  display: block;
+  position: relative;
+  bottom: 0;
+  height: 50%; 
+}
+
+
+@media (max-width: 768px){
+  #ss-criatproccess .session_title .text {
+      margin: 0 1rem;
+      font-size: 1.3rem;
+  }
+}

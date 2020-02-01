@@ -1,0 +1,43 @@
+#ss-processmodules .processmodules {
+  display: block;
+  position: relative;
+  padding: 0.5rem;
+  margin-bottom: 2rem; }
+#ss-processmodules .courses_category_bullet {
+  display: block;
+  position: relative;
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-image: url("../img/courses_category_bullet.png");
+  background-clip: border-box;
+  width: 2.2rem;
+  height: 3.81rem; }
+#ss-processmodules .courses_category_bullet_icon {
+  display: block;
+  position: relative;
+  font-family: "ElegantIcons";
+  font-size: 1rem;
+  color: #FFFFFF;
+  top: 0.51rem; }
+#ss-processmodules .courses_category_title {
+  font-family: 'Raleway ExtraBold', sans-serif;
+  text-transform: uppercase;
+  margin: auto;
+  color: #606060;
+  text-align: left;
+  font-size: 1rem; }
+#ss-processmodules .courses_category_modules {
+  font-family: 'Raleway Medium', sans-serif;
+  margin: auto;
+  margin-bottom: 1rem;
+  color: #aaaaaa;
+  text-align: left;
+  font-size: 0.7rem; }
+#ss-processmodules .courses_category_desc {
+  font-family: 'Raleway Medium', sans-serif;
+  margin: auto;
+  color: #7a7a7a;
+  text-align: left;
+  font-size: 1rem; }
+

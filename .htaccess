@@ -1,0 +1,17 @@
+##### LOCAWEB - NAO REMOVER #####
+AddHandler php72-script .php
+suPHP_ConfigPath /home/canilrec1/
+##### LOCAWEB - NAO REMOVER #####
+
+<IfModule mod_rewrite.c>
+	Options +FollowSymLinks
+	RewriteEngine On
+	RewriteRule ^\/?$ $1?page=home [NC] 
+	RewriteRule ^home/?$ $1?page=home [NC] 
+	RewriteRule ^equipe/?$ index.php?page=equipe [NC] 
+	RewriteRule ^profile/([0-9]+)/?$ index.php?page=profile&id=$1 [NC] 
+	RewriteRule ^trackdetail/([0-9]+)/?$ index.php?page=trackdetail&id=$1 [NC] 
+	RewriteRule ^contato/?$ index.php?page=formcontato [NC] 
+	RewriteRule ^tracks/?$ index.php?page=tracks [NC] 
+</IfModule>
+

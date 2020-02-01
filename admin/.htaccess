@@ -1,0 +1,79 @@
+##### LOCAWEB - NAO REMOVER #####
+AddHandler php72-script .php
+suPHP_ConfigPath /home/canilrec1/
+##### LOCAWEB - NAO REMOVER #####
+
+<IfModule mod_rewrite.c>
+	Options +FollowSymLinks
+	RewriteEngine On
+
+	RewriteCond %{SCRIPT_FILENAME} !-d
+	RewriteCond %{SCRIPT_FILENAME} !-f
+
+	RewriteBase /admin/
+
+	RewriteCond    %{REQUEST_FILENAME}  -d
+	
+	RewriteRule ^dashboard\/?$ index.php?page=dashboard [NC]
+	RewriteRule ^\/?$ index.php?page=dashboard [NC]
+	RewriteRule ^login\/?$ login.php [NC]
+	RewriteRule ^logout\/?$ logout.php [NC]
+
+	RewriteRule ^manager/(artists)/ajax\/?$ index.php?page=manager-artists&route=grid&mode=ajax [NC]
+	RewriteRule ^manager/(artists)\/?$ index.php?page=manager-artists&route=grid [NC]
+	RewriteRule ^manager/(artists)/edit/([0-9]+)\/?$ index.php?page=manager-artists&route=edit&id=$2&mode=ajax [NC]
+	RewriteRule ^manager/(artists)/new\/?$ index.php?page=manager-artists&route=new&mode=ajax [NC]
+
+	RewriteRule ^manager/(tracks)/ajax\/?$ index.php?page=manager-tracks&route=grid&mode=ajax [NC]
+	RewriteRule ^manager/(tracks)\/?$ index.php?page=manager-tracks&route=grid [NC]
+	RewriteRule ^manager/(tracks)/edit/([0-9]+)\/?$ index.php?page=manager-tracks&route=edit&id=$2&mode=ajax [NC]
+	RewriteRule ^manager/(tracks)/new\/?$ index.php?page=manager-tracks&route=new&mode=ajax [NC]
+
+	RewriteRule ^manager/(genres)/ajax\/?$ index.php?page=manager-genres&route=grid&mode=ajax [NC]
+	RewriteRule ^manager/(genres)\/?$ index.php?page=manager-genres&route=grid [NC]
+	RewriteRule ^manager/(genres)/edit/([0-9]+)\/?$ index.php?page=manager-genres&route=edit&id=$2&mode=ajax [NC]
+	RewriteRule ^manager/(genres)/new\/?$ index.php?page=manager-genres&route=new&mode=ajax [NC]
+
+	RewriteRule ^manager/(processmodules)/ajax\/?$ index.php?page=manager-processmodules&route=grid&mode=ajax [NC]
+	RewriteRule ^manager/(processmodules)\/?$ index.php?page=manager-processmodules&route=grid [NC]
+	RewriteRule ^manager/(processmodules)/edit/([0-9]+)\/?$ index.php?page=manager-processmodules&route=edit&id=$2&mode=ajax [NC]
+	RewriteRule ^manager/(processmodules)/new\/?$ index.php?page=manager-processmodules&route=new&mode=ajax [NC]
+
+	RewriteRule ^manager/(ourservices)/ajax\/?$ index.php?page=manager-ourservices&route=grid&mode=ajax [NC]
+	RewriteRule ^manager/(ourservices)\/?$ index.php?page=manager-ourservices&route=grid [NC]
+	RewriteRule ^manager/(ourservices)/edit/([0-9]+)\/?$ index.php?page=manager-ourservices&route=edit&id=$2&mode=ajax [NC]
+	RewriteRule ^manager/(ourservices)/new\/?$ index.php?page=manager-ourservices&route=new&mode=ajax [NC]
+
+	RewriteRule ^manager/(scopes)/ajax\/?$ index.php?page=manager-scopes&route=grid&mode=ajax [NC]
+	RewriteRule ^manager/(scopes)\/?$ index.php?page=manager-scopes&route=grid [NC]
+	RewriteRule ^manager/(scopes)/edit/([0-9]+)\/?$ index.php?page=manager-scopes&route=edit&id=$2&mode=ajax [NC]
+	RewriteRule ^manager/(scopes)/new\/?$ index.php?page=manager-scopes&route=new&mode=ajax [NC]
+
+	RewriteRule ^manager/(pages)/ajax\/?$ index.php?page=manager-pages&route=grid&mode=ajax [NC]
+	RewriteRule ^manager/(pages)\/?$ index.php?page=manager-pages&route=grid [NC]
+	RewriteRule ^manager/(pages)/edit/([0-9]+)\/?$ index.php?page=manager-pages&route=edit&id=$2&mode=ajax [NC]
+	RewriteRule ^manager/(pages)/new\/?$ index.php?page=manager-pages&route=new&mode=ajax [NC]
+
+	RewriteRule ^manager/(sections)/ajax\/?$ index.php?page=manager-sections&route=grid&mode=ajax [NC]
+	RewriteRule ^manager/(sections)\/?$ index.php?page=manager-sections&route=grid [NC]
+	RewriteRule ^manager/(sections)/edit/([0-9]+)\/?$ index.php?page=manager-sections&route=edit&id=$2&mode=ajax [NC]
+	RewriteRule ^manager/(sections)/new\/?$ index.php?page=manager-sections&route=new&mode=ajax [NC]
+
+	RewriteRule ^manager/(users)/ajax\/?$ index.php?page=manager-users&route=grid&mode=ajax [NC]
+	RewriteRule ^manager/(users)\/?$ index.php?page=manager-users&route=grid [NC]
+	RewriteRule ^manager/(users)/edit/([0-9]+)\/?$ index.php?page=manager-users&route=edit&id=$2&mode=ajax [NC]
+	RewriteRule ^manager/(users)/new\/?$ index.php?page=manager-users&route=new&mode=ajax [NC]
+
+	RewriteRule ^manager/(userTypes)/ajax\/?$ index.php?page=manager-usertypes&route=grid&mode=ajax [NC]
+	RewriteRule ^manager/(usertypes)\/?$ index.php?page=manager-usertypes&route=grid [NC]
+	RewriteRule ^manager/(usertypes)/edit/([0-9]+)\/?$ index.php?page=manager-usertypes&route=edit&id=$2&mode=ajax [NC]
+	RewriteRule ^manager/(usertypes)/new\/?$ index.php?page=manager-usertypes&route=new&mode=ajax [NC]
+
+	RewriteRule ^mailbox\/?$ index.php?page=mailbox-mailbox&route=inbox [NC]
+	RewriteRule ^mailbox/ajax\/?$ index.php?page=mailbox-mailbox&route=inbox&mode=ajax [NC]
+	RewriteRule ^mailbox/read/([0-9]+)\/?$ index.php?page=mailbox-mailbox&route=read&id=$1&mode=ajax [NC]
+	RewriteRule ^mailbox/outbox\/?$ index.php?page=mailbox-mailbox&route=outbox&mode=ajax [NC]
+	RewriteRule ^mailbox/compose\/?$ index.php?page=mailbox-mailbox&route=compose&mode=ajax [NC]
+	RewriteRule ^mailbox/compose\/?$ index.php?page=mailbox-mailbox&route=send [NC]
+</IfModule>
+

@@ -1,0 +1,26 @@
+========================== TODO =========================
+
+# - Tratar erros e exceptions nas APIs
+# - APIs GetAll retorna somente Status =1, REVISAR
+# - Colocar Token nas requisições
+# - Internacionalização
+# - Colocar os nomes das tabelas e Globals
+# - Criar sistema de mensageria para passar na respostas das requisições POST PUT e DEL
+# - Criar funções changeDocumentForJsonType para todos os Managers.
+
+
+
+
+
+========================== LEMBRETES =========================
+variant_date_from_timestamp(1567390393);
+
+
+$date = new DateTime('2019-9-23');
+$date2 = date_timestamp_get($date);
+var_dump($date);
+var_dump($date2);
+
+
+
+decodeURIComponent(escape(string)) //decode_utf8 similar para javascript

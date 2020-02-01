@@ -1,0 +1,20 @@
+/*SLIDER*/
+#ss-slider{
+	background-color: #eeeeee;
+  background-image: url("../img/bg.jpg") ;
+    background-position: center center;
+}
+
+#ss-slider #main-logo{
+	margin: 1rem 0;
+}
+
+
+/*MENU*/
+#ss-mainmenu #menu-logo{
+	margin: 10px;
+}
+
+
+
+

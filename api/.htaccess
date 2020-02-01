@@ -1,0 +1,118 @@
+<IfModule mod_rewrite.c>
+	Options +FollowSymLinks
+	RewriteEngine On
+
+	RewriteCond %{SCRIPT_FILENAME} !-d
+	RewriteCond %{SCRIPT_FILENAME} !-f
+	
+	RewriteBase /api
+
+	RewriteRule ^artists\/?$ artistsService.php [NC] 
+	RewriteRule ^artists/([0-9]+)\/?$ artistsService.php?id=$1 [NC] 
+	RewriteRule ^artists/([0-9]+)/(tracks)\/?$ artistsService.php?id=$1&route=$2 [NC] 
+	RewriteRule ^artists/update/([0-9]+)\/?$ artistsService.php?id=$1&route=update [NC] 
+	RewriteRule ^artists/new\/?$ artistsService.php?route=new [NC] 
+	RewriteRule ^artists/(delete)\/?$ artistsService.php?route=$1 [NC] 
+
+	RewriteRule ^contactmsg\/?$ contactMsgService.php [NC] 
+	RewriteRule ^contactmsg/([0-9]+)\/?$ contactMsgService.php?id=$1 [NC] 
+	RewriteRule ^contactmsg/(createcontactmsg)\/?$ contactMsgService.php?route=$1 [NC] 
+
+	RewriteRule ^genres\/?$ genresService.php [NC] 
+	RewriteRule ^genres/([0-9]+)\/?$ genresService.php?id=$1 [NC] 
+	RewriteRule ^genres/update/([0-9]+)\/?$ genresService.php?id=$1&route=update [NC] 
+	RewriteRule ^genres/new\/?$ genresService.php?route=new [NC] 
+	RewriteRule ^genres/(delete)\/?$ genresService.php?route=$1 [NC] 
+
+	RewriteRule ^ourservices\/?$ ourservicesService.php [NC] 
+	RewriteRule ^ourservices/([0-9]+)\/?$ ourservicesService.php?id=$1 [NC] 
+	RewriteRule ^ourservices/update/([0-9]+)\/?$ ourservicesService.php?id=$1&route=update [NC] 
+	RewriteRule ^ourservices/new\/?$ ourservicesService.php?route=new [NC] 
+	RewriteRule ^ourservices/(delete)\/?$ ourservicesService.php?route=$1 [NC] 
+
+	RewriteRule ^pages\/?$ pagesService.php [NC] 
+	RewriteRule ^pages/([0-9]+)\/?$ pagesService.php?id=$1 [NC] 
+	RewriteRule ^pages/([0-9]+)/(sections)\/?$ pagesService.php?id=$1&route=$2 [NC] 
+	RewriteRule ^pages/update/([0-9]+)\/?$ pagesService.php?id=$1&route=update [NC] 
+	RewriteRule ^pages/new\/?$ pagesService.php?route=new [NC] 
+	RewriteRule ^pages/(delete)\/?$ pagesService.php?route=$1 [NC] 
+
+	RewriteRule ^processmodules\/?$ processmodulesService.php [NC] 
+	RewriteRule ^processmodules/([0-9]+)\/?$ processmodulesService.php?id=$1 [NC] 
+	RewriteRule ^processmodules/update/([0-9]+)\/?$ processmodulesService.php?id=$1&route=update [NC] 
+	RewriteRule ^processmodules/new\/?$ processmodulesService.php?route=new [NC] 
+	RewriteRule ^processmodules/(delete)\/?$ processmodulesService.php?route=$1 [NC] 
+
+	RewriteRule ^scopes\/?$ scopesService.php [NC] 
+	RewriteRule ^scopes/([0-9]+)\/?$ scopesService.php?id=$1 [NC] 
+	RewriteRule ^scopes/update/([0-9]+)\/?$ scopesService.php?id=$1&route=update [NC] 
+	RewriteRule ^scopes/new\/?$ scopesService.php?route=new [NC] 
+	RewriteRule ^scopes/(delete)\/?$ scopesService.php?route=$1 [NC] 
+
+	RewriteRule ^sections\/?$ sectionsService.php [NC] 
+	RewriteRule ^sections/([0-9]+)\/?$ sectionsService.php?id=$1 [NC] 
+	RewriteRule ^sections/update/([0-9]+)\/?$ sectionsService.php?id=$1&route=update [NC] 
+	RewriteRule ^sections/new\/?$ sectionsService.php?route=new [NC] 
+	RewriteRule ^sections/(delete)\/?$ sectionsService.php?route=$1 [NC] 
+
+	RewriteRule ^socialmidias\/?$ socialmidiasService.php [NC] 
+	RewriteRule ^socialmidias/([0-9]+)\/?$ socialmidiasService.php?id=$1 [NC] 
+
+	RewriteRule ^tracks\/?$ tracksService.php [NC] 
+	RewriteRule ^tracks/([0-9]+)\/?$ tracksService.php?id=$1 [NC] 
+	RewriteRule ^tracks/([0-9]+)/(artists)\/?$ tracksService.php?id=$1&route=$2 [NC] 
+	RewriteRule ^tracks/update/([0-9]+)\/?$ tracksService.php?id=$1&route=update [NC] 
+	RewriteRule ^tracks/new\/?$ tracksService.php?route=new [NC] 
+	RewriteRule ^tracks/(delete)\/?$ tracksService.php?route=$1 [NC] 
+
+	RewriteRule ^users\/?$ usersService.php [NC] 
+	RewriteRule ^users/([0-9]+)\/?$ usersService.php?id=$1 [NC] 
+	RewriteRule ^users/update/([0-9]+)\/?$ usersService.php?id=$1&route=update [NC] 
+	RewriteRule ^users/updatestatus/([0-9]+)/([0-9]+)\/?$ usersService.php?id=$1&status=$2&route=updatestatus [NC] 
+	RewriteRule ^users/new\/?$ usersService.php?route=new [NC] 
+	RewriteRule ^users/(delete)\/?$ usersService.php?route=$1 [NC] 
+	RewriteRule ^users/login\/?$ usersService.php?route=login [NC] 
+	RewriteRule ^users/logged\/?$ usersService.php?route=logged [NC] 
+
+	RewriteRule ^usertypes\/?$ usertypesService.php [NC] 
+	RewriteRule ^usertypes/([0-9]+)\/?$ usertypesService.php?id=$1 [NC] 
+	RewriteRule ^usertypes/update/([0-9]+)\/?$ usertypesService.php?id=$1&route=update [NC] 
+	RewriteRule ^usertypes/new\/?$ usertypesService.php?route=new [NC] 
+	RewriteRule ^usertypes/(delete)\/?$ usertypesService.php?route=$1 [NC] 
+
+	RewriteRule ^mail\/?$ mailService.php [NC] 
+	RewriteRule ^mail/([0-9]+)\/?$ mailService.php?id=$1 [NC] 
+	RewriteRule ^mail/update/([0-9]+)\/?$ mailService.php?id=$1&route=update [NC] 
+	RewriteRule ^mail/new\/?$ mailService.php?route=new [NC] 
+	RewriteRule ^mail/(delete)\/?$ mailService.php?route=$1 [NC] 
+	RewriteRule ^mail/target/([0-9]+)\/?$ mailService.php?id=$1&route=target [NC] 
+	RewriteRule ^mail/target-new/([0-9]+)\/?$ mailService.php?id=$1&route=target-new [NC] 
+	RewriteRule ^mail/creator/([0-9]+)\/?$ mailService.php?id=$1&route=creator [NC] 
+	RewriteRule ^mail/send\/?$ mailService.php?route=send [NC] 
+	RewriteRule ^mail/update-viewed/([0-9]+)\/?$ mailService.php?id=$1&route=update-viewed [NC] 
+
+	RewriteRule ^chatmessages\/?$ chatmessagesService.php [NC] 
+	RewriteRule ^chatmessages/([0-9]+)\/?$ chatmessagesService.php?id=$1 [NC] 
+	RewriteRule ^chatmessages/update/([0-9]+)\/?$ chatmessagesService.php?id=$1&route=update [NC] 
+	RewriteRule ^chatmessages/new\/?$ chatmessagesService.php?route=new [NC] 
+	RewriteRule ^chatmessages/(delete)\/?$ chatmessagesService.php?route=$1 [NC] 
+	RewriteRule ^chatmessages/target/([0-9]+)\/?$ chatmessagesService.php?id=$1&route=target [NC] 
+	RewriteRule ^chatmessages/conversation/([0-9]+)/([0-9]+)\/?$ chatmessagesService.php?idtarget=$1&idcreator=$2&route=conversation [NC] 
+	RewriteRule ^chatmessages/creator/([0-9]+)\/?$ chatmessagesService.php?id=$1&route=creator [NC] 
+	RewriteRule ^chatmessages/send\/?$ chatmessagesService.php?route=send [NC] 
+
+	RewriteRule ^calendar\/?$ calendarService.php [NC] 
+	RewriteRule ^calendar/([0-9]+)\/?$ calendarService.php?id=$1 [NC] 
+	RewriteRule ^calendar/user/([0-9]+)\/?$ calendarService.php?id=$1&route=user [NC] 
+	RewriteRule ^calendar/usernodate/([0-9]+)\/?$ calendarService.php?id=$1&route=usernodate [NC] 
+	RewriteRule ^calendar/userhasdate/([0-9]+)\/?$ calendarService.php?id=$1&route=userhasdate [NC] 
+	RewriteRule ^calendar/update/([0-9]+)\/?$ calendarService.php?id=$1&route=update [NC] 
+	RewriteRule ^calendar/new\/?$ calendarService.php?route=new [NC] 
+	RewriteRule ^calendar/(delete)\/?$ calendarService.php?route=$1 [NC] 
+
+	RewriteRule ^chatusershasnewmessages/new\/?$ chatusershasnewmessagesService.php?route=new [NC] 
+	RewriteRule ^chatusershasnewmessages/target/([0-9]+)\/?$ chatusershasnewmessagesService.php?id=$1&route=target [NC]
+	RewriteRule ^chatusershasnewmessages/targetandcreator/([0-9]+)/([0-9]+)\/?$ chatusershasnewmessagesService.php?idcreator=$2&idtarget=$1&route=targetandcreator [NC]  
+	RewriteRule ^chatusershasnewmessages/deletetargetandcreator/([0-9]+)/([0-9]+)\/?$ chatusershasnewmessagesService.php?idcreator=$2&idtarget=$1&route=deletetargetandcreator [NC] 
+
+</IfModule>

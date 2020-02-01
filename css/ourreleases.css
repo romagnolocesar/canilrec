@@ -1,0 +1,33 @@
+#ss-ourreleases {
+  margin-bottom: 4rem; 
+}
+
+  #ss-ourreleases .releases_galery {
+    margin-top: 3rem; }
+  #ss-ourreleases .button {
+    display: inline-block;
+    position: relative;
+    font-family: "Raleway ExtraBold";
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    width: 70%;
+    margin-top: 2rem;
+    padding: 0.4rem;
+    background-color: #7c08b2;
+    color: #ffffff;
+    -webkit-border-radius: 0.3rem;
+    -moz-border-radius: 0.3rem;
+    -ms-border-radius: 0.3rem;
+    border-radius: 0.3rem;
+    border: 1px solid #8a8a8a;
+    bottom: 0px; }
+    #ss-ourreleases .button:hover {
+      background-color: #9342b8;
+      cursor: pointer; }
+
+@media (max-width: 768px){
+  #ss-ourreleases .session_title .text {
+      margin: 0 1rem;
+      font-size: 1.3rem;
+  }
+}

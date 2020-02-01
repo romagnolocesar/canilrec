@@ -1,0 +1,3 @@
+initDataTable = function(){
+    $('#gridData').DataTable();
+}

@@ -1,0 +1,125 @@
+/*NOSSO ALCANCE*/
+
+  
+  #ss-scope .scope_boxes .scope_number {
+    font-family: 'Raleway Medium', sans-serif;
+    font-size: 4.0rem;
+    color: #e4e4e4;
+    display: inline-table;
+    text-align: center;
+    position: relative;
+    font-style: italic; }
+    #ss-scope .scope_boxes .scope_number:before {
+      display: relative;
+      width: 1rem;
+      height: 1rem;
+      content: " ";
+      background-color: #ff9933;
+      -webkit-border-radius: 3px;
+      -moz-border-radius: 3px;
+      -ms-border-radius: 3px;
+      border-radius: 3px;
+      moz-transform-origin: "left";
+      -o-transform-origin: "left";
+      -ms-transform-origin: "left";
+      -webkit-transform-origin: "left";
+      transform-origin: "left";
+      -moz-transform: translate(0, 0) rotate(45deg) scale(1);
+      -o-transform: translate(0, 0) rotate(45deg) scale(1);
+      -ms-transform: translate(0, 0) rotate(45deg) scale(1);
+      -webkit-transform: translate(0, 0) rotate(45deg) scale(1);
+      transform: translate(0, 0) rotate(45deg) scale(1);
+      float: left;
+      width: 0.7rem;
+      height: 0.7rem;
+      vertical-align: middle;
+      display: table-cell;
+      position: absolute;
+      top: 50%;
+      left: -2rem;
+      margin-top: -5px; }
+    #ss-scope .scope_boxes .scope_number:after {
+      display: relative;
+      width: 1rem;
+      height: 1rem;
+      content: " ";
+      background-color: #ff9933;
+      -webkit-border-radius: 3px;
+      -moz-border-radius: 3px;
+      -ms-border-radius: 3px;
+      border-radius: 3px;
+      moz-transform-origin: "left";
+      -o-transform-origin: "left";
+      -ms-transform-origin: "left";
+      -webkit-transform-origin: "left";
+      transform-origin: "left";
+      -moz-transform: translate(0, 0) rotate(45deg) scale(1);
+      -o-transform: translate(0, 0) rotate(45deg) scale(1);
+      -ms-transform: translate(0, 0) rotate(45deg) scale(1);
+      -webkit-transform: translate(0, 0) rotate(45deg) scale(1);
+      transform: translate(0, 0) rotate(45deg) scale(1);
+      float: left;
+      width: 0.7rem;
+      height: 0.7rem;
+      vertical-align: middle;
+      display: table-cell;
+      position: absolute;
+      top: 50%;
+      right: -2rem;
+      margin-top: -5px; }
+  #ss-scope .scope_boxes .scope_icon {
+    display: block;
+    position: relative;
+    border-bottom: 1px solid #484848; }
+  #ss-scope .scope_boxes .scope_icon_img {
+    font-family: "ElegantIcons";
+    font-size: 1.2rem;
+    color: #ff9933;
+    display: block;
+    position: relative;
+    bottom: -0.8rem; }
+  #ss-scope .scope_info_bar {
+    background-color: #ff9933;
+    width: 100%;
+    height: auto;
+    margin: 1rem 0 0 0;
+    padding: 1rem;
+    align-items: center;
+    text-align: center; }
+  #ss-scope .scope_title {
+    font-family: 'Raleway ExtraBold', sans-serif;
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: #7f7f7f; }
+  #ss-scope .scope_info_bar_text {
+    font-family: 'Raleway ExtraBold', sans-serif;
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin: 0 auto; }
+  #ss-scope .scope_info_bar_button {
+    display: inline-block;
+    position: relative;
+    font-family: "Raleway ExtraBold";
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    width: 7rem;
+    padding: 0.4rem;
+    margin: 0.5rem;
+    background-color: #e4e4e4;
+    -webkit-border-radius: 0.3rem;
+    -moz-border-radius: 0.3rem;
+    -ms-border-radius: 0.3rem;
+    border-radius: 0.3rem;
+    color: #3D3D3D;
+    bottom: 0px; }
+    #ss-scope .scope_info_bar_button:hover {
+      background-color: #C4C4C4;
+      cursor: pointer; }
+
+@media (max-width: 768px){
+  #ss-scope .session_title .text {
+      margin: 0 1rem;
+      font-size: 1.3rem;
+  }
+}

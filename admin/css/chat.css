@@ -1,0 +1,14 @@
+#teste-chat{
+	display: block;
+	position: fixed;
+	bottom: 0;
+	right: 2rem;
+	z-index: 9999;
+	background-color: #ECF0F5;
+	border: .3rem solid #cccccc;
+	border-radius: .5rem .5rem 0 0;
+}
+
+#teste-chat .box{
+	margin-bottom: 0;
+}
