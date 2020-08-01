@@ -168,6 +168,15 @@
                                   <label>Descrição</label>
                                   <textarea id="wysieditor" name="dataform[description]" class="form-control" rows="3"><?php echo utf8_decode($tracksItem['description']); ?></textarea> 
                             </div>
+                            <div class="form-group" id="audioFieldUpload">
+                                  <label for="foto">Áudio da track</label>
+                                  
+                                  <input name="dataform[audio]" type="text" class="form-control" placeholder="Audio.wav" 
+                                value="<?php echo utf8_decode($tracksItem['audio']); ?>">                           
+                                  <input onchange="sendAudio('tracks')" type="file" name="audio[audio]">
+                                  <input type="hidden" name="dataform[audio]" value="<?php echo utf8_decode($tracksItem['audio']); ?>" id="hiddenaudiofield">
+
+                              </div>
                             <div class="form-group">
                                 <label for="foto">Capa</label>
                                 <div class="container">
@@ -272,6 +281,12 @@
                                       <label>Descrição</label>
                                       <textarea id="wysieditor" name="dataform[description]" class="form-control" rows="3"></textarea> 
                                 </div>
+                                <div class="form-group" id="audioFieldUpload">
+                                  <label for="foto">Áudio da track</label>                            
+                                  <input onchange="sendAudio('tracks')" type="file" name="audio[audio]">
+                                  <input type="hidden" name="dataform[audio]" value='' id="hiddenaudiofield">
+
+                              </div>
                                 <div class="form-group">
                                   <label for="foto">Capa</label>
                                   <div class="container">

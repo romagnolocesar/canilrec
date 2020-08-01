@@ -55,10 +55,10 @@
 <script src="<?php echo $GLOBALS['admin_base_url']; ?>/js/usersHandler.js"></script>
 <!-- CHAT -->
 <!-- <script src="/js/chat.js"></script> -->
-<script src="<?php echo $GLOBALS['admin_base_url']; ?>/js/fancywebsocket.js"></script>
-<script type="text/javascript">
+<!-- <script src="<?php //echo $GLOBALS['admin_base_url']; ?>/js/fancywebsocket.js"></script> -->
+<!-- <script type="text/javascript">
     var urlPort = 'localhost:12345';
-  </script>
+  </script> -->
 
 
 <!-- PAGE SCRIPTS -->
@@ -136,6 +136,23 @@
           $("#fileFieldUpload").hide(); 
           $("#currentPicture").hide();
           $("#btnCrop").show();
+        }
+      });
+
+    }
+
+    function sendAudio(target){
+      var form = document.querySelector('form#dataform')
+      var formData = new FormData(form);
+
+      $.ajax({
+        url: admin_base_url+'/managerAudios.php?action=upload&target='+target,
+        type: 'POST',
+        data: formData,
+        contentType: false,
+        processData: false,
+        success: function(data){
+          $("#hiddenaudiofield").attr("value", data);
         }
       });
 

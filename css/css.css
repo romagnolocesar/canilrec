@@ -288,7 +288,7 @@ html, body{
 }
     
 .hasNoShape .session_title .title-2 {
-     color: #7c08b2; 
+     color: #e6d305; 
 }
 
 .hasNoShape .description {
@@ -338,7 +338,7 @@ html, body{
 	width: 1rem;
 	height: 1rem;
 	content: " ";
-	background-color: #7c08b2;
+	background-color: #e6d305;
 	-webkit-border-radius: 3px;
 	-moz-border-radius: 3px;
 	-ms-border-radius: 3px;
@@ -361,7 +361,7 @@ html, body{
 	width: 1rem;
 	height: 1rem;
 	content: " ";
-	background-color: #9342b8;
+	background-color: #d8d624;
 	-webkit-border-radius: 3px;
 	-moz-border-radius: 3px;
 	-ms-border-radius: 3px;
@@ -383,7 +383,7 @@ html, body{
 	width: 1rem;
 	height: 1rem;
 	content: " ";
-	background-color: #b490c4;
+	background-color: #c5c45c;
 	-webkit-border-radius: 3px;
 	-moz-border-radius: 3px;
 	-ms-border-radius: 3px;
@@ -438,7 +438,7 @@ html, body{
 	width: 1rem;
 	height: 1rem;
 	content: " ";
-	background-color: #7c08b2;
+	background-color: #e6d305;
 	-webkit-border-radius: 3px;
 	-moz-border-radius: 3px;
 	-ms-border-radius: 3px;
@@ -461,7 +461,7 @@ html, body{
 	width: 1rem;
 	height: 1rem;
 	content: " ";
-	background-color: #9342b8;
+	background-color: #d8d624;
 	-webkit-border-radius: 3px;
 	-moz-border-radius: 3px;
 	-ms-border-radius: 3px;
@@ -484,7 +484,7 @@ html, body{
 	width: 1rem;
 	height: 1rem;
 	content: " ";
-	background-color: #b490c4;
+	background-color: #c5c45c;
 	-webkit-border-radius: 3px;
 	-moz-border-radius: 3px;
 	-ms-border-radius: 3px;

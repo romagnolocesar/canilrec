@@ -3,67 +3,69 @@
 
 		<?php
 		foreach ($jsonItens as $item) {
-		?>
+			if($item["status"] == "1"){
+			?>
 
-		<div id="artists-box-container" class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12">
-		<?php
-			//echo "<a href='".$GLOBALS["base_url"]."/profile/".$item["id"]."'>";
-		?>
-			<div class="artists-box">
-				<p id="full-description">
-		<?php
-				echo utf8_decode($item["shortdescription"]);
+			<div id="artists-box-container" class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12">
+			<?php
+				//echo "<a href='".$GLOBALS["base_url"]."/profile/".$item["id"]."'>";
+			?>
+				<div class="artists-box">
+					<p id="full-description">
+			<?php
+					echo utf8_decode($item["shortdescription"]);
 
-		?>
-				</p>
-				<div class="clearfix">	
-					<center>
-						<div id="picture">
-							<div class="overlay"></div>
-		<?php
-							echo '<img class="img-responsive img-fluid" src="'.$GLOBALS['base_url'].'/img/artists/'.$item["picture"].'">';
-		?>
-						</div>
-						<div id="name">
-							<span>
-		<?php
-								echo $item["name"];
-		?>
-							</span>
-						</div>
-						<div id="genre">
-							<span>
-		<?php
-			$genreUrl = $GLOBALS['base_url']."/api/genres/".$item["genre"];
-			$genreData = file_get_contents($genreUrl);
-			$genre = json_decode($genreData);
-			echo utf8_decode($genre->title);
-		?>
-							</span>
-						</div>
-						<div id="mail">
-							<span class="eleganticon"> &nbsp</span> 
-							<span>
-		<?php
-								echo utf8_decode($item["email"]);
-		?>
-							</span>
-						</div>
-						<div id="phone">
-								<span class="eleganticon"> &nbsp</span> 
+			?>
+					</p>
+					<div class="clearfix">	
+						<center>
+							<div id="picture">
+								<div class="overlay"></div>
+			<?php
+								echo '<img class="img-responsive img-fluid" src="'.$GLOBALS['base_url'].'/img/artists/'.$item["picture"].'">';
+			?>
+							</div>
+							<div id="name">
 								<span>
-		<?php
-									echo utf8_decode($item["phone"]);;
-		?>
+			<?php
+									echo $item["name"];
+			?>
 								</span>
-						</div>
-					</center>
+							</div>
+							<div id="genre">
+								<span>
+			<?php
+				$genreUrl = $GLOBALS['base_url']."/api/genres/".$item["genre"];
+				$genreData = file_get_contents($genreUrl);
+				$genre = json_decode($genreData);
+				echo utf8_decode($genre->title);
+			?>
+								</span>
+							</div>
+							<div id="mail">
+								<span class="eleganticon"> &nbsp</span> 
+								<span>
+			<?php
+									echo utf8_decode($item["email"]);
+			?>
+								</span>
+							</div>
+							<div id="phone">
+									<span class="eleganticon"> &nbsp</span> 
+									<span>
+			<?php
+										echo utf8_decode($item["phone"]);;
+			?>
+									</span>
+							</div>
+						</center>
+					</div>
 				</div>
 			</div>
-		</div>
-		<!-- </a> -->
+			<!-- </a> -->
 
 		<?php
+			}
 
 		}
 

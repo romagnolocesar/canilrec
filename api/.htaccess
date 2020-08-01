@@ -5,7 +5,7 @@
 	RewriteCond %{SCRIPT_FILENAME} !-d
 	RewriteCond %{SCRIPT_FILENAME} !-f
 	
-	RewriteBase /api
+	RewriteBase /canil/api/
 
 	RewriteRule ^artists\/?$ artistsService.php [NC] 
 	RewriteRule ^artists/([0-9]+)\/?$ artistsService.php?id=$1 [NC] 

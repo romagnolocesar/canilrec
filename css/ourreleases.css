@@ -13,16 +13,16 @@
     width: 70%;
     margin-top: 2rem;
     padding: 0.4rem;
-    background-color: #7c08b2;
+    background-color: #e6d305;
     color: #ffffff;
     -webkit-border-radius: 0.3rem;
     -moz-border-radius: 0.3rem;
     -ms-border-radius: 0.3rem;
     border-radius: 0.3rem;
-    border: 1px solid #8a8a8a;
+    border: 1px solid #ffffff;
     bottom: 0px; }
     #ss-ourreleases .button:hover {
-      background-color: #9342b8;
+      background-color: #f4e756;
       cursor: pointer; }
 
 @media (max-width: 768px){

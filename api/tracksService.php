@@ -24,6 +24,7 @@ function getAll(){
 				$item->setTitle(utf8_encode($value['title']));
 				$item->setDescription(utf8_encode($value['description']));
 				$item->setCover(utf8_encode($value['cover']));
+				$item->setAudio(utf8_encode($value['audio']));
 				$item->setGenre(utf8_encode($value['genre']));
 				$item->setStatus(utf8_encode($value['status']));
 				array_push($itens, $item->getJson());
@@ -51,6 +52,7 @@ function getById($id){
 			$track->setTitle(utf8_encode($value['title']));
 			$track->setDescription(utf8_encode($value['description']));
 			$track->setCover(utf8_encode($value['cover']));
+			$track->setAudio(utf8_encode($value['audio']));
 			$track->setGenre(utf8_encode($value['genre']));
 			$track->setStatus(utf8_encode($value['status']));
 		}	
@@ -106,6 +108,7 @@ function update($id, $tracksObj){
 				'title' => $tracksObj->getTitle(), 
 				'description' => $tracksObj->getDescription(),
 				'cover' => $tracksObj->getCover(),
+				'audio' => $tracksObj->getAudio(),
 				'genre' => $tracksObj->getGenre(),
 				'status' => $tracksObj->getStatus()
 			)
@@ -124,6 +127,7 @@ function create($id, $tracksObj){
 				'title' => $tracksObj->getTitle(), 
 				'description' => $tracksObj->getDescription(),
 				'cover' => $tracksObj->getCover(),
+				'audio' => $tracksObj->getAudio(),
 				'genre' => $tracksObj->getGenre(),
 				'status' => $tracksObj->getStatus()
 			)
@@ -201,6 +205,7 @@ function mountObjectFromDataForm($id, $dataForm, $action){
 	$tracksObj->setTitle($dataForm['title']);
 	$tracksObj->setDescription($dataForm['description']);
 	$tracksObj->setCover($dataForm['cover']);
+	$tracksObj->setAudio($dataForm['audio']);
 	$tracksObj->setGenre($dataForm['genre']);
 
 	if($dataForm['artists']){

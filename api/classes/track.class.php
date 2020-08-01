@@ -4,6 +4,7 @@ class track{
 	private $title;
 	private $description;
 	private $cover;
+	private $audio;
 	private $genre;
 	private $status;
 	private $artists = array();
@@ -40,6 +41,14 @@ class track{
 		return $this->cover;
 	}
 
+	public function setAudio($newAudio){
+		$this->audio = $newAudio;
+	}
+
+	public function getAudio(){
+		return $this->audio;
+	}
+
 	public function setGenre($newGenre){
 		$this->genre = $newGenre;
 	}
@@ -70,6 +79,7 @@ class track{
 			"title" => $this->getTitle(),
 			"description" => $this->getDescription(),
 			"cover" => $this->getCover(),
+			"audio" => $this->getAudio(),
 			"genre" => $this->getGenre(),
 			"artists" => $this->getArtists(),
 			"status" => $this->getStatus(),

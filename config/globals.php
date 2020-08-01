@@ -1,15 +1,15 @@
 <?php
-// $GLOBALS['sitename'] = "Canil Records";
-// $GLOBALS['base_url'] = "http://localhost/canil";
-// $GLOBALS['admin_base_url'] = "http://localhost/canil/admin";
-// $GLOBALS['uri'] = "C:\wamp64\www\canil";
-// $GLOBALS['admin_uri'] = "C:\wamp64\www\canil\admin";
-
 $GLOBALS['sitename'] = "Canil Records";
-$GLOBALS['base_url'] = "http://canilrec.com.br";
-$GLOBALS['admin_base_url'] = "http://canilrec.com.br/admin";
-$GLOBALS['uri'] = "public_html/";
-$GLOBALS['admin_uri'] = "public_html/admin";
+$GLOBALS['base_url'] = "http://localhost/canil";
+$GLOBALS['admin_base_url'] = "http://localhost/canil/admin";
+$GLOBALS['uri'] = "C:\wamp64\www\canil";
+$GLOBALS['admin_uri'] = "C:\wamp64\www\canil\admin";
+
+// $GLOBALS['sitename'] = "Canil Records";
+// $GLOBALS['base_url'] = "http://canilrec.com.br";
+// $GLOBALS['admin_base_url'] = "http://canilrec.com.br/admin";
+// $GLOBALS['uri'] = "public_html/";
+// $GLOBALS['admin_uri'] = "public_html/admin";
 
 
 $GLOBALS['pages-prefix']['home'] = "hm";

@@ -53,18 +53,18 @@
       -ms-border-radius: 0.3rem;
       border-radius: 0.3rem; }
       #nav_bar .itens li:hover {
-        background: #7c08b2;
+        background: #e6d305;
         color: #FFFFFF;
         cursor: pointer; }
       #nav_bar .itens li.selected {
-        background: #7c08b2;
+        background: #e6d305;
         color: #FFFFFF;
         cursor: pointer; }
   #nav_bar .search-button {
     display: block;
     padding-top: 1.8rem;
     margin: 1.7rem 0 1.7rem 0;
-    color: #7c08b2;
+    color: #e6d305;
     font-size: 1.2rem;
     font-family: "ElegantIcons";
     text-align: left; }
